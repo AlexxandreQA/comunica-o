@@ -1,0 +1,37 @@
+# 🐞 Bug Report
+
+## 📝 Título
+Erro ao abrir nova conta poupança no Parabank
+
+## 🌍 Ambiente
+- Sistema: Web
+- URL: https://parabank.parasoft.com/parabank/login.htm
+- Navegador: Chrome
+- Data: 04/05/2026
+
+## 🔁 Passos para reproduzir
+1. Acessar o site do Parabank
+2. Fazer login com:
+   - Usuário: qa.squad@test.com
+   - Senha: Squad@2026
+3. Clicar em "Abrir nova conta"
+4. Selecionar a opção “verificar”
+5. Confirmar a abertura da conta
+
+## ❌ Comportamento observado
+A mensagem de sucesso não é exibida ou a conta não é criada corretamente após a confirmação.
+
+## ✅ Comportamento esperado
+Exibir a mensagem “Conta aberta” junto com o novo número da conta poupança criada.
+
+## 💥 Impacto
+- Usuário não consegue confirmar se a conta foi criada
+- Pode gerar dúvidas ou retrabalho
+- Impacto médio na experiência do usuário
+
+## 📸 Evidências
+- Ausência da mensagem de sucesso
+- Possível inconsistência na listagem de contas
+
+## 🚀 Próximo passo sugerido
+Validar fluxo de criação de conta no backend e retorno da API responsável pela abertura de conta poupança.
